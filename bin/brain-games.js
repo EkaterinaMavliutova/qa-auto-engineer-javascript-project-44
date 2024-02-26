@@ -1,5 +1,5 @@
 #! /usr/bin/env node
 
-const greeting = 'Welcome to the Brain Games!';
+import { greetUser } from '../src/cli.js';
 
-console.log(greeting); // eslint-disable-line no-console
+greetUser();
