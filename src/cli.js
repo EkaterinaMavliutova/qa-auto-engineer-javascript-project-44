@@ -1,13 +1,15 @@
-// для запроса данных у пользователя
+// для запроса информации у пользователя
 import readlineSync from 'readline-sync';
 
 const greetUser = () => {
-  console.log('Welcome to the Brain Games!'); // eslint-disable-line no-console
+  console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ', {
     defaultInput: 'MysteriousUser',
     keepWhitespace: false,
   });
-  console.log(`Hello, ${userName}!`); // eslint-disable-line no-console
+  console.log(`Hello, ${userName}!`);
+
+  return userName;
 };
 
 export default greetUser;
