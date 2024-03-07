@@ -9,10 +9,13 @@ const generateGameQuestion = () => {
   const isEven = gameQuestion % 2 === 0;
   const gameQuestionAnswer = isEven ? 'yes' : 'no';
 
-  console.log(`Question: ${gameQuestion}`);
-  return gameQuestionAnswer;
+  return {
+    question: gameQuestion,
+    answer: gameQuestionAnswer,
+  };
 };
 
+// функция игры
 const playBrainEven = () => {
   playGame(generateGameQuestion, rule);
 };
