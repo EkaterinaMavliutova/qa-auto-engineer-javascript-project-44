@@ -22,13 +22,31 @@ const generateMathOperator = () => {
 const generateGameQuestion = () => {
   const firstArg = generateRandomInt(101); // случайное число [0; 100]
   const secondArg = generateRandomInt(101);
-  const mathExpression = `${firstArg} ${generateMathOperator()} ${secondArg}`;
+  const mathOperator = generateMathOperator();
+  const mathExpression = `${firstArg} ${mathOperator} ${secondArg}`;
+  let answerForExpression = 0;
 
-  console.log(`Question: ${mathExpression}`);
+  switch (mathOperator) {
+    case '+':
+      answerForExpression = firstArg + secondArg;
+      break;
+    case '-':
+      answerForExpression = firstArg - secondArg;
+      break;
+    case '*':
+      answerForExpression = firstArg * secondArg;
+      break;
+    default:
+      answerForExpression = firstArg + secondArg;
+  }
 
-  return eval(mathExpression); // вычисляет выражение из строки
+  return {
+    question: mathExpression,
+    answer: answerForExpression,
+  };
 };
 
+// функция игры
 const playBrainCalc = () => {
   playGame(generateGameQuestion, rule);
 };
