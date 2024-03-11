@@ -4,8 +4,12 @@ import greetUser from './cli.js'; // приветствие пользовате
 
 const setsNum = 3;
 
-// случайное число [0; maxIntExcluded)
-export const generateRandomInt = (maxIntExcluded) => Math.floor(Math.random() * maxIntExcluded);
+// случайное число [minInt; maxInt], по умолчанию minInt = 0
+export const generateRandomInt = (maxInt, minInt = 0) => {
+  const minCeiled = Math.ceil(minInt);
+  const maxFloored = Math.floor(maxInt);
+  return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+};
 
 // определение максимального общего делителя для двух положительных чисел
 export const findMaxCommontDivisor = (firstNumber, secondNumber) => {
@@ -20,6 +24,19 @@ export const findMaxCommontDivisor = (firstNumber, secondNumber) => {
   }
 
   return maxCommonDivisor;
+};
+
+// возвращает арифметическую прогрессию длиной не менее 5-ти элементов
+export const generateArithmeticProgression = (firstElement, progressionLength, changingStep) => {
+  const progression = [firstElement];
+  let nextElement = firstElement;
+
+  for (let i = 1; i <= progressionLength - 1; i += 1) {
+    nextElement += changingStep;
+    progression[i] = nextElement;
+  }
+
+  return progression;
 };
 
 // вывод правил игры
