@@ -5,7 +5,7 @@ const rule = 'What is the result of the expression?';
 
 // возвращает один из 3-ех операторов: + или - или *
 const generateMathOperator = () => {
-  const mathOperatorCode = generateRandomInt(3); // случайное число [0;2]
+  const mathOperatorCode = generateRandomInt(2); // случайное число [0;2]
   switch (mathOperatorCode) {
     case 0:
       return '+';
@@ -20,8 +20,9 @@ const generateMathOperator = () => {
 
 // вопрос для пользователя в раунде игры и ответ на него на выходе
 const generateGameQuestion = () => {
-  const firstArg = generateRandomInt(101); // случайное число [0; 100]
-  const secondArg = generateRandomInt(101);
+  const maxRandomInt = 100;
+  const firstArg = generateRandomInt(maxRandomInt);
+  const secondArg = generateRandomInt(maxRandomInt);
   const mathOperator = generateMathOperator();
   const mathExpression = `${firstArg} ${mathOperator} ${secondArg}`;
   let answerForExpression = 0;
