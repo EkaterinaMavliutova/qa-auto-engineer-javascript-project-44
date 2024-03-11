@@ -39,6 +39,19 @@ export const generateArithmeticProgression = (firstElement, progressionLength, c
   return progression;
 };
 
+// функция определяет является ли положительное целое число простым
+export const isPrime = (positiveInt) => {
+  if (positiveInt <= 1) {
+    return false;
+  }
+  for (let i = 2; i < positiveInt; i += 1) {
+    if (positiveInt % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 // вывод правил игры
 export const showRule = (gameRule) => {
   console.log(gameRule);
