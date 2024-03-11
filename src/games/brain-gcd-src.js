@@ -5,8 +5,9 @@ const rule = 'Find the greatest common divisor of given numbers.';
 
 // вопрос для пользователя в раунде игры и ответ на него на выходе
 const generateGameQuestion = () => {
-  const firstNum = generateRandomInt(101); // число [0 ; 100]
-  const secondNum = generateRandomInt(101);
+  const maxRandomInt = 100;
+  const firstNum = generateRandomInt(maxRandomInt);
+  const secondNum = generateRandomInt(maxRandomInt);
   const gameQuestion = `${firstNum} ${secondNum}`;
 
   return {
