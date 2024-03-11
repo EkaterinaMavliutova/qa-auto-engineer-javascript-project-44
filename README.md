@@ -11,3 +11,5 @@
 <a href="https://asciinema.org/a/G17SfGt9mq1BRety73zAeBTp7" target="_blank"><img src="https://asciinema.org/a/G17SfGt9mq1BRety73zAeBTp7.svg" width="50%" height="50%"/></a>
 ### Brain-progression game recording on asciinema.org:
 <a href="https://asciinema.org/a/hZuTUvEGEQOd7HSwboofOPEWw" target="_blank"><img src="https://asciinema.org/a/hZuTUvEGEQOd7HSwboofOPEWw.svg" width="50%" height="50%"/></a>
+### Brain-prime game recording on asciinema.org:
+<a href="https://asciinema.org/a/FDSM078AVIjXg4woMR5Af6hpa" target="_blank"><img src="https://asciinema.org/a/FDSM078AVIjXg4woMR5Af6hpa.svg" width="50%" height="50%"/></a>
