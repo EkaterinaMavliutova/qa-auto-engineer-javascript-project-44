@@ -9,3 +9,5 @@
 <a href="https://asciinema.org/a/STNEZdwFZK2NWhMhjYPSNtO8h" target="_blank"><img src="https://asciinema.org/a/STNEZdwFZK2NWhMhjYPSNtO8h.svg" width="50%" height="50%"/></a>
 ### Brain-gcd game recording on asciinema.org:
 <a href="https://asciinema.org/a/G17SfGt9mq1BRety73zAeBTp7" target="_blank"><img src="https://asciinema.org/a/G17SfGt9mq1BRety73zAeBTp7.svg" width="50%" height="50%"/></a>
+### Brain-progression game recording on asciinema.org:
+<a href="https://asciinema.org/a/hZuTUvEGEQOd7HSwboofOPEWw" target="_blank"><img src="https://asciinema.org/a/hZuTUvEGEQOd7HSwboofOPEWw.svg" width="50%" height="50%"/></a>
