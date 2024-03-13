@@ -1,8 +1,7 @@
-// для запроса информации у пользователя
-import readlineSync from 'readline-sync';
+import readlineSync from 'readline-sync'; // для запроса информации у пользователя
 import greetUser from './cli.js'; // приветствие пользователя в игре
 
-const setsNum = 3;
+const roundsNum = 3; // максимальное кол-во раундов в любой игре
 
 // случайное число [minInt; maxInt], по умолчанию minInt = 0
 export const generateRandomInt = (maxInt, minInt = 0) => {
@@ -93,7 +92,7 @@ export const playGame = (gameQuestionFunction, gameRule) => {
   const userName = greetUser();
 
   showRule(gameRule);
-  for (let i = 1; i <= setsNum; i += 1) {
+  for (let i = 1; i <= roundsNum; i += 1) {
     const gameRoundResult = playGameRound(gameQuestionFunction);
     if (gameRoundResult.isUserWin) {
       console.log('Correct!');
