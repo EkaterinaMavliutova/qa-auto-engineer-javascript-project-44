@@ -12,8 +12,14 @@
 ## Installation
 >note: the current version of Brain Games requires Node.js v20.11.1 or higher
 * clone this repository
-* run `make install` command to install required dependencies
-* run `npm link` command to run Brain Games globally
+* to install required dependencies:
+```
+make install
+```
+* to install Brain Games globally:
+```
+npm link
+```
 
 ## How to play
 Open your Terminal, type one of Brain Game name and press `Enter`.
