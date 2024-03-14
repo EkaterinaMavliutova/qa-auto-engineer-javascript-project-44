@@ -10,9 +10,10 @@
 * **brain-prime**: decide whether the given number prime or not
 
 ## Installation
-```
-npm install @hexlet/code
-```
+>note: the current version of Brain Games requires Node.js v20.11.1 or higher
+* clone this repository
+* run `make install` command to install required dependencies
+* run `npm link` command to run Brain Games globally
 
 ## How to play
 Open your Terminal, type one of Brain Game name and press `Enter`.
@@ -20,8 +21,6 @@ For example:
 ```
 brain-progression
 ```
-
-
 ## Brain Games recordings on asciinema.org
 ### brain-even:
 <a href="https://asciinema.org/a/Cx4SLCqZkdHoDaYV5tNZHggtq" target="_blank"><img src="https://asciinema.org/a/Cx4SLCqZkdHoDaYV5tNZHggtq.svg" width="50%" height="50%"/></a>
