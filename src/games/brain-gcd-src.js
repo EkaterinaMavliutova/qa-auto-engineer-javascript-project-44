@@ -1,18 +1,34 @@
-import { playGame, generateRandomInt, findMaxCommontDivisor } from '../index.js';
+import { playGame, generateRandomInt } from '../index.js';
 
-// правила игры
 const rule = 'Find the greatest common divisor of given numbers.';
 
-// вопрос для пользователя в раунде игры и ответ на него на выходе
+const findMaxCommonDivisor = (firstNum, secondNum) => {
+  let maxNum = Math.max(firstNum, secondNum);
+  let minNum = Math.min(firstNum, secondNum);
+  let maxCommonDivisor = 0;
+
+  if (maxNum === 0 || minNum === 0) {
+    maxCommonDivisor = maxNum;
+  } else {
+    for (let i = 1; minNum > 0; i += 1) {
+      const remainder = maxNum % minNum;
+      maxNum = minNum;
+      minNum = remainder;
+    }
+    maxCommonDivisor = maxNum;
+  }
+
+  return maxCommonDivisor;
+};
+
 const generateGameQuestion = () => {
   const maxRandomInt = 100;
   const firstNum = generateRandomInt(maxRandomInt);
   const secondNum = generateRandomInt(maxRandomInt);
-  const gameQuestion = `${firstNum} ${secondNum}`;
 
   return {
-    question: gameQuestion,
-    answer: findMaxCommontDivisor(firstNum, secondNum),
+    question: `${firstNum} ${secondNum}`,
+    answer: findMaxCommonDivisor(firstNum, secondNum),
   };
 };
 

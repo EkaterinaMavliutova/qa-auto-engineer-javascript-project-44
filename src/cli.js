@@ -1,4 +1,3 @@
-// для запроса информации у пользователя
 import readlineSync from 'readline-sync';
 
 const greetUser = () => {
