@@ -2,7 +2,6 @@ import { playGame, generateRandomInt } from '../index.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-// функция определяет является ли число простым
 const isPrime = (positiveInt) => {
   if (positiveInt <= 1) {
     return false;

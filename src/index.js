@@ -3,7 +3,6 @@ import greetUser from './cli.js';
 
 const roundsNum = 3;
 
-// случайное число [minInt; maxInt]
 export const generateRandomInt = (maxInt, minInt = 0) => {
   const minCeiled = Math.ceil(minInt);
   const maxFloored = Math.floor(maxInt);
@@ -22,7 +21,7 @@ export const askQuestion = (gameQuestion) => {
 export const getUserAnswer = () => {
   const userAnswer = readlineSync.prompt({
     prompt: 'Your answer: ',
-    keepWhitespace: false, // обрезает пробелы вначале и в конце строки
+    keepWhitespace: false,
   });
 
   return userAnswer.toLowerCase();
@@ -30,7 +29,6 @@ export const getUserAnswer = () => {
 
 export const isCorrectAnswer = (userAnswer, correctAnswer) => userAnswer === String(correctAnswer);
 
-// один раунд игры
 export const playGameRound = (gameQuestionFunction) => {
   const { question, answer } = gameQuestionFunction();
   askQuestion(question);
@@ -43,7 +41,6 @@ export const playGameRound = (gameQuestionFunction) => {
   };
 };
 
-// переключатель раундов
 export const playGame = (gameQuestionFunction, gameRule) => {
   const userName = greetUser();
 

@@ -28,7 +28,6 @@ const generateGameQuestion = () => {
     progressionLength,
     changingStep,
   );
-  // изменение прогрессии для вопроса в игре
   const deletedElementIndex = generateRandomInt(progressionLength - 1);
   const deletedElementForQuestion = progression.splice(deletedElementIndex, 1, '..');
 
